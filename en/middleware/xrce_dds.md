@@ -233,6 +233,9 @@ At time of writing there is no PX4 parameter for setting the address of the remo
 Therefore for Ethernet connections you will _have_ to use a command to start the client.
 :::
 
+On the simulator the client is automatically started on localhost UDP port 8888.
+Moreover, the startup scripts take into account [multi vehicle simulations](../ros/ros2_multi_vehicle.md) and their configuration.
+
 ## Supported uORB Messages
 
 The set of [PX4 uORB topics](../msg_docs/README.md) that are exposed through the client are set in [dds_topics.yaml](https://github.com/PX4/PX4-Autopilot/blob/main/src/modules/microdds_client/dds_topics.yaml).
